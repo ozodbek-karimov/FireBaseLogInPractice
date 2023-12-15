@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".models.SecondActivity">
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="9dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="@+id/phone_number_et"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/phone_number_et"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_et" />
+
+    <EditText
+        android:id="@+id/phone_number_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="256dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Phone number:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Verify"
+        app:layout_constraintEnd_toEndOf="@+id/send_btn"
+        app:layout_constraintStart_toStartOf="@+id/send_btn"
+        app:layout_constraintTop_toBottomOf="@+id/send_btn" />
+
+    <Button
+        android:id="@+id/resend_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Resend"
+        app:layout_constraintEnd_toEndOf="@+id/verify_btn"
+        app:layout_constraintStart_toStartOf="@+id/verify_btn"
+        app:layout_constraintTop_toBottomOf="@+id/verify_btn" />
+
+    <EditText
+        android:id="@+id/code_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter code:"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/phone_number_et"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/phone_number_et"
+        app:layout_constraintTop_toBottomOf="@+id/resend_btn"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

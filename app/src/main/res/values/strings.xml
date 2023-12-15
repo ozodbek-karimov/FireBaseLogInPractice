@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Restart Project</string>
+    <string name="textview">First text</string>
+    <string name="web_client_id">314918620985-9af7ov0q5ls14dl9ngep94mftqn0s15v.apps.googleusercontent.com</string>
+    <string name="write_a_message">Write a message...</string>
+    <string name="todo">TODO</string>
+</resources>
